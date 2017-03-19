@@ -1023,7 +1023,7 @@
                 $target.trigger(BJUI.eventType.ajaxStatus)
                 $ajaxMask = $target.find('> .bjui-ajax-mask')
             }
-            if (!op.type) op.type = 'POST'
+            if (!op.type) op.type = 'GET'
             if (!op.dataType) op.dataType = 'json'
             if (!op.cache) op.cache = false
             op.timeout = op.ajaxTimeout || BJUI.ajaxTimeout
@@ -7507,7 +7507,7 @@
         dataUrl         : null,     // Request data source URL, for processing (filtering / sorting / paging) results
         updateRowUrl    : null,     // Update row data URL, return JSON data
         postData        : null,     // Send other data to server
-        loadType        : 'POST',   // Ajax load request type
+        loadType        : 'GET',   // Ajax load request type
         dataType        : 'json',   // Data type of data source
         local           : 'remote', // Optional 'local' | 'remote'
         fieldSortable   : true,     // Click the field to sort
