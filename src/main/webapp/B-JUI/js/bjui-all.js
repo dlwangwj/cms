@@ -17311,7 +17311,7 @@
                     
                     if (typeof val === 'undefined') val = $obj.val()
                     $.ajax({
-                        type     : 'POST',
+                        type     : 'GET',
                         dataType : 'json', 
                         url      : refurl.replace('{value}', encodeURIComponent(val)), 
                         cache    : false,
