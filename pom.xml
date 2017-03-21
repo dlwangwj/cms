@@ -5,7 +5,7 @@
   <groupId>cn.nlr</groupId>
   <artifactId>mcs</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>mcs</name>
   <url>http://maven.apache.org</url>
@@ -46,6 +46,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
 		</dependency>
 		<dependency>
 			<groupId>tk.mybatis</groupId>
@@ -68,16 +74,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- 热部署 -->
 		<dependency>
-		      <groupId>junit</groupId>
-		      <artifactId>junit</artifactId>
-		      <version>3.8.1</version>
-		      <scope>test</scope>
+	        <groupId>org.springframework</groupId>
+	        <artifactId>springloaded</artifactId>
+	        <version>1.2.6.RELEASE</version>
 	    </dependency>
 	</dependencies>
 	
 	<!-- Package as an executable jar -->
 	<build>
+	<!-- war 名 -->
+		<finalName>mcs</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

@@ -1,0 +1,68 @@
+20:18:10.656 [main] INFO  cn.nlr.App - Starting App on IBM458-PC02E84Q with PID 10012 (C:\IBM\workspaceSTS\workspaceSpringBoot\mcs\target\classes started by wwj in C:\IBM\workspaceSTS\workspaceSpringBoot\mcs)
+20:18:10.656 [main] INFO  cn.nlr.App - No active profile set, falling back to default profiles: default
+20:18:10.907 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d81d5b7: startup date [Mon Mar 20 20:18:10 CST 2017]; root of context hierarchy
+20:18:11.857 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.4.Final
+20:18:12.953 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[cn.nlr]' package. Please check your configuration.
+20:18:13.140 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+20:18:13.432 [main] WARN  o.s.c.a.ConfigurationClassPostProcessor - Cannot enhance @Configuration bean definition 'myBatisMapperScannerConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+20:18:14.242 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$79a92a7a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:18:15.248 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+20:18:15.288 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+20:18:15.288 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.11
+20:18:15.634 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+20:18:15.639 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:18:15.640 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4733 ms
+20:18:16.000 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+20:18:16.006 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+20:18:16.007 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:18:16.007 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:18:16.007 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+20:18:18.041 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d81d5b7: startup date [Mon Mar 20 20:18:10 CST 2017]; root of context hierarchy
+20:18:18.226 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/getUserInfo]}" onto public cn.nlr.model.User cn.nlr.controller.UserController.getUserInfo(java.lang.String,org.springframework.ui.Model)
+20:18:18.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/regiester]}" onto public java.lang.String cn.nlr.controller.UserController.regiester(java.util.Map<java.lang.String, java.lang.Object>)
+20:18:18.232 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:18:18.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:18:18.294 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:18.294 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:18.378 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:18:18.446 [main] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+20:18:19.889 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+20:18:20.002 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-80"]
+20:18:20.032 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler [http-nio-127.0.0.1-80]
+20:18:20.210 [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+20:18:20.320 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+20:18:20.330 [main] INFO  cn.nlr.App - Started App in 10.475 seconds (JVM running for 12.823)
+20:22:55.497 [http-nio-127.0.0.1-80-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+20:22:55.497 [http-nio-127.0.0.1-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+20:22:55.524 [http-nio-127.0.0.1-80-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+20:23:23.790 [http-nio-127.0.0.1-80-exec-9] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:25:09.434 [http-nio-127.0.0.1-80-exec-4] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:25:18.051 [http-nio-127.0.0.1-80-exec-9] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:26:08.499 [http-nio-127.0.0.1-80-exec-6] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:26:24.061 [http-nio-127.0.0.1-80-exec-10] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:26:46.545 [http-nio-127.0.0.1-80-exec-10] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:26:47.532 [http-nio-127.0.0.1-80-exec-9] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:26:48.570 [http-nio-127.0.0.1-80-exec-3] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:26:49.365 [http-nio-127.0.0.1-80-exec-8] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:01.476 [http-nio-127.0.0.1-80-exec-5] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:02.006 [http-nio-127.0.0.1-80-exec-1] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:02.471 [http-nio-127.0.0.1-80-exec-4] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:03.106 [http-nio-127.0.0.1-80-exec-2] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:03.969 [http-nio-127.0.0.1-80-exec-7] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:04.485 [http-nio-127.0.0.1-80-exec-10] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:04.995 [http-nio-127.0.0.1-80-exec-9] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:05.634 [http-nio-127.0.0.1-80-exec-3] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:17.683 [http-nio-127.0.0.1-80-exec-5] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:18.292 [http-nio-127.0.0.1-80-exec-1] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:19.078 [http-nio-127.0.0.1-80-exec-4] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:20.912 [http-nio-127.0.0.1-80-exec-2] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:21.994 [http-nio-127.0.0.1-80-exec-7] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:22.500 [http-nio-127.0.0.1-80-exec-10] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:22.890 [http-nio-127.0.0.1-80-exec-9] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:52.639 [http-nio-127.0.0.1-80-exec-7] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:53.175 [http-nio-127.0.0.1-80-exec-3] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:53.643 [http-nio-127.0.0.1-80-exec-4] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:27:54.583 [http-nio-127.0.0.1-80-exec-10] WARN  o.s.web.servlet.PageNotFound - Request method 'POST' not supported
+20:31:48.163 [RMI TCP Connection(2)-192.168.1.100] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+20:31:48.163 [RMI TCP Connection(2)-192.168.1.100] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5d81d5b7: startup date [Mon Mar 20 20:18:10 CST 2017]; root of context hierarchy
+20:31:48.163 [RMI TCP Connection(2)-192.168.1.100] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
