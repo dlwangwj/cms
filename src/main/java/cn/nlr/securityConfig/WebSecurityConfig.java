@@ -39,14 +39,14 @@ public class WebSecurityConfig extends WebMvcConfigurerAdapter {
         @Override
         public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
                 throws Exception {
-            HttpSession session = request.getSession();
-            if (session.getAttribute(SESSION_KEY) != null)
+//            HttpSession session = request.getSession();
+//            if (session.getAttribute(SESSION_KEY) != null)
                 return true;
-
-            // 跳转登录
-            String url = "/login";
-            response.sendRedirect(url);
-            return false;
+//
+//            // 跳转登录
+//            String url = "/login";
+//            response.sendRedirect(url);
+//            return false;
         }
     }
 }
